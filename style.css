@@ -1,0 +1,33 @@
+.header-bg {
+    background-color: #264653;
+}
+
+.bike-img {
+    filter: grayscale(100%);
+    transition: .3s;
+}
+.biker:hover .bike-img {
+    filter: grayscale(0);
+}
+
+.orange-color {
+    color: #E76F51;
+}
+.p-color {
+    color:#6C6C6C;
+}
+.fa-star {
+    font-size: 12px;
+}
+
+.fa-star.filled {
+    color: #E76F51;
+}
+  
+.fa-star.empty {
+    color: #E76F51;
+    opacity: 0.25;
+}
+.banker-color {
+    color: #252B42;
+}
