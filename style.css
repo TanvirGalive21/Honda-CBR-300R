@@ -1,33 +1,120 @@
+/* -------------------
+     Poppins fonts    
+----------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+/* Common  CSS */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
 .header-bg {
-    background-color: #264653;
+  background-color: #264653;
 }
 
+.title-text {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.purchase-button {
+  background-color: #e76f51;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 9px 25px;
+  cursor: pointer;
+}
+.paragraph-text {
+  color: #e0e0e0;
+  font-size: 14px;
+}
+.bike-text {
+  color: #e76f51;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+}
 .bike-img {
-    filter: grayscale(100%);
-    transition: .3s;
+  filter: grayscale(100%);
+  transition: 0.3s;
 }
 .biker:hover .bike-img {
-    filter: grayscale(0);
+  filter: grayscale(0);
+}
+.subscribe-p-text {
+  color: #7e848c;
+  font-size: 14px;
 }
 
 .orange-color {
-    color: #E76F51;
+  color: #e76f51;
 }
 .p-color {
-    color:#6C6C6C;
+  color: #6c6c6c;
 }
 .fa-star {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .fa-star.filled {
-    color: #E76F51;
+  color: #e76f51;
 }
-  
-.fa-star.empty {
-    color: #E76F51;
-    opacity: 0.25;
-}
+
 .banker-color {
-    color: #252B42;
+  color: #252b42;
+}
+
+/* --------------------------------
+ fearture paragraph underline css 
+-----------------------------------*/
+
+.featur-underline p {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+}
+.featur-underline p::before {
+  background: #e76f51 none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 1px;
+  left: 50%;
+  margin-left: -30px;
+  position: absolute;
+  width: 60px;
+}
+
+/*----------------
+    navbar css    
+----------------- */
+#navLinks { 
+    justify-content: flex-end;
+}
+
+#home, #about, #portfolio, #testimonials {
+    margin: 2em 1em 0 1em;
+    font-size: large;
+    color: #fff;
+}
+
+#brand_name {
+    font-size: 1.75em;
+    font-weight: 500;
+    padding-top: 4vh;
+}
+
+#navbar-button {
+    align-items: flex-end;
+}
+
+.navbar-nav {
+    position: relative;
+}
+
+.footer-bg {
+    background-color: #0B0D17;
+    color: #fff;
 }

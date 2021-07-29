@@ -15,17 +15,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- header start -->
+    <!-- ---------------
+         header start   
+    ---------------------->
     <header>
         <div class="container-flfuid header-bg">
+           <!--navbar as a link-->
+        <div class="container">
+          <nav id="mainNavbar" class="navbar navbar-expand-sm navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#" target="_blank" id="brand_name"><span class="orange-color">HONDA</span></a>
+               <!--toggle_button-->
+                <button class="navbar-toggler" id="navbar-button" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> 
+                <!--navbar options/buttons-->
+                <div class="collapse navbar-collapse" id="navLinks">
+                    <div class="navbar-nav">                        
+                            <a class="nav-link active" aria-current="page" href="" id="home">Home</a>
+                            <a class="nav-link" href="#" id="about">Shop</a>
+                            <a class="nav-link" href="#" id="portfolio">News</a>
+                            <a class="nav-link" href="#" id="portfolio">Contact</a>
+                            <a class="nav-link purchase-button " href="#" id="testimonials">Login</a>                       
+                    </div>
+                </div>
+  
+            </div>
+        </nav>
+        </div>
             <div class="container text-white py-5 ">
                 <div class="row d-flex justify-content-center align-items-center ">
                     <div class="col-lg-6 col-sm-6">
-                        <p><small>Computer-controlled digital transistorized with electronic advance</small></p>
-                        <h1>Honda CBR 300R</h1>
-                        <p class="w-50"><small>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</small></p>
+                        <p class="paragraph-text">Computer-controlled digital transistorized with electronic advance</p>
+                        <h1 class="title-text">Honda CBR 300R</h1>
+                        <p class="w-75 p-2 paragraph-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <button type="button" class="purchase-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             Purchase
                         </button>
                         
@@ -48,7 +73,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-sm-6">
+                    <div class="col-lg-6 col-sm-6 p-5">
                         <img class="img-fluid" src="images/header-bike.png" alt="">
                     </div>
                 </div>
@@ -57,8 +82,9 @@
     </header>
     <main>
         <!-- feature section start -->
-        <section class="container py-5">
-            <h1 class="text-center fs-1 fs-bold">Fetured Bikes 2021</h1>
+        <section class="container featur-underline py-5">
+            <h1 class="text-center title-text">Fetured Bikes 2021</h1>
+            <p class="bike-text">Best bike collection</p>
             <div>
                 <div class="row d-flex justify-content-around align-items-center py-5">
                     <div class="col-lg-4 biker"><img class="img-fluid p-5 bike-img" src="images/feature-bike.png" alt=""></div>
@@ -67,25 +93,26 @@
                 </div>
             </div>
         </section>
+
         <!-- Clients section start -->
         <section class="container">
-            <h1 class="text-center">Happy <span class="orange-color">Clients says</span></h1>
+            <h1 class="text-center title-text">Happy <span class="orange-color">Clients says</span></h1>
             <div class="row row-cols-1 row-cols-md-3 g-4 my-5">
               <div class="col">
                 <div class="card h-100 p-5">
                   <img src="images/user-1.png" class="card-img-top" alt="...">
-                  <div class="card-body p-5 text-center">
+                  <div class="card-body p-3 text-center">
                     <p class="card-text course-author p-color">Slate helps you see how 
                         many more days you need 
                         to work to reach your financial 
                         goal for the month and year.</p>
-                    <div class="course-rating">
+                    <div class="client-rating">
                         <div>
                             <i class="fas fa-star filled"></i>
                             <i class="fas fa-star filled"></i>
                             <i class="fas fa-star filled"></i>
                             <i class="fas fa-star filled"></i>
-                            <i class="fas fa-star empty"></i>
+                            <i class="far fa-star filled"></i>
                         </div>
                     </div>
                         <h4 class="text-primary py-3">Regina Miles</h4>
@@ -96,18 +123,18 @@
               <div class="col">
                 <div class="card h-100 p-5">
                   <img src="images/user-2.png" class="card-img-top" alt="...">
-                  <div class="card-body p-5 text-center">
+                  <div class="card-body p-3 text-center">
                     <p class="card-text course-author p-color">Slate helps you see how 
                         many more days you need 
                         to work to reach your financial 
                         goal for the month and year.</p>
-                    <div class="course-rating">
+                    <div class="client-rating">
                         <div>
                             <i class="fas fa-star filled"></i>
                             <i class="fas fa-star filled"></i>
                             <i class="fas fa-star filled"></i>
                             <i class="fas fa-star filled"></i>
-                            <i class="fas fa-star empty"></i>
+                            <i class="far fa-star filled"></i>
                         </div>
                     </div>
                         <h4 class="text-primary py-3">Regina Miles</h4>
@@ -118,18 +145,18 @@
               <div class="col">
                 <div class="card h-100 p-5">
                   <img src="images/user-3.png" class="card-img-top"  alt="...">
-                  <div class="card-body p-5 text-center">
+                  <div class="card-body p-3 text-center">
                     <p class="card-text course-author p-color">Slate helps you see how 
                         many more days you need 
                         to work to reach your financial 
                         goal for the month and year.</p>
-                    <div class="course-rating">
+                    <div class="client-rating">
                         <div>
                             <i class="fas fa-star filled"></i>
                             <i class="fas fa-star filled"></i>
                             <i class="fas fa-star filled"></i>
                             <i class="fas fa-star filled"></i>
-                            <i class="fas fa-star empty"></i>
+                            <i class="far fa-star filled"></i>
                         </div>
                     </div>
                         <h4 class="text-primary py-3">Regina Miles</h4>
@@ -139,15 +166,16 @@
               </div>
             </div>
           </section>
+
           <!-- FAQ Section Start  -->
           <section class="container">
-            <h1 class="text-center">Frequently Asked <span class="orange-color">Questions</span></h1>
+            <h1 class="text-center title-text">Frequently Asked <span class="orange-color">Questions</span></h1>
             <div>
-                <div class="row my-5">
-                    <div class="col-lg-6">
+                <div class="row my-5 d-flex justify-content-center align-items-center">
+                    <div class="col-lg-6 col-md-3 p-5">
                         <img class="img-fluid" src="images/faq.png" width="431" height="423" alt="">
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-3 p-5">
                         <div class="accordion" id="accordionExample">
                             <div class="accordion-item">
                               <h2 class="accordion-header" id="headingOne">
@@ -158,7 +186,7 @@
                               </h2>
                               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                  <strong>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. <code>.accordion-body</code>, though the transition does limit overflow.
+                                  <strong>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider.
                                 </div>
                               </div>
                             </div>
@@ -171,7 +199,7 @@
                               </h2>
                               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                  <strong>Bear in mind that if the helmet did its job most people would tell you </strong> that they did not even hit their head, or did not hit their head that hard. And the thin shells on most helmets now tend to hide any dents in the foam. But if you can see marks on the shell or measure any foam crush at all, replace the helmet. <code>.accordion-body</code>, though the transition does limit overflow.
+                                  <strong>Bear in mind that if the helmet did its job most people would tell you </strong> that they did not even hit their head, or did not hit their head that hard. And the thin shells on most helmets now tend to hide any dents in the foam. But if you can see marks on the shell or measure any foam crush at all, replace the helmet. 
                                 </div>
                               </div>
                             </div>
@@ -183,7 +211,7 @@
                               </h2>
                               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    The bottom line: Leaving your <strong>bike outside for a day or two won't do major damage.</strong> You may see signs of rust after a week of neglect. After one month in bad conditions, your beloved bike parts will start to degrade <code>.accordion-body</code>, though the transition does limit overflow.
+                                    The bottom line: Leaving your <strong>bike outside for a day or two won't do major damage.</strong> You may see signs of rust after a week of neglect. After one month in bad conditions, your beloved bike parts will start to degrade.
                                 </div>
                               </div>
                             </div> 
@@ -211,8 +239,89 @@
             </div>
           </section>
 
+          <!-- special discount slider section -->
+           <section class="container-flfuid">
+            <h1 class="text-center title-text">Special Discount & <span class="orange-color"> Offers</span></h1>
+            <div id="carouselExampleControls" class="carousel slide header-bg text-white my-5" data-bs-ride="carousel">
+              <div class="container carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row d-flex align-items-center">
+                    <div class="col-lg-7 p-5">
+                      <p class="paragraph-text">Huge Cashback On CBR 300R Bikes and With Only 2 Days Left</p>
+                        <h1 class="title-text orange-color">Honda CBR 300R</h1>
+                        <p class="paragraph-text w-75">Always remain up to date with the “Discount & offer” section of Motorcycle Valley.At this page we try to cover up most of the motorcycle </p>
+                      <div class="m-3">
+                        <button class="purchase-button">Purchase Now</button>
+                       </div>
+                    </div>
+                    <div class="col-lg-5 p-5 my-5">
+                      <img src="images/offer-1.png" class="d-block w-100" alt="headphone">
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="carousel-item">
+                  <div class="row d-flex align-items-center">
+                    <div class="col-lg-7 p-5">
+                      <p class="paragraph-text">Huge Cashback On CBR 300R Bikes and With Only 2 Days Left</p>
+                        <h1 class="title-text orange-color">Honda CBR 300R</h1>
+                        <p class="paragraph-text w-50">Always remain up to date with the “Discount & offer” section of Motorcycle Valley.At this page we try to cover up most of the motorcycle </p>
+                      <div class="m-3">
+                        <button class="purchase-button">Purchase Now</button>
+                      </div>
+                    </div>
+                    <div class="col-lg-5 p-5 my-5">
+                      <img src="images/offer-2.png" class="d-block w-100" alt="headphone">
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="carousel-item">
+                  <div class="row  d-flex align-items-center">
+                    <div class="col-lg-7 p-5">
+                      <p class="paragraph-text">Huge Cashback On CBR 300R Bikes and With Only 2 Days Left</p>
+                        <h1 class="title-text orange-color">Honda CBR 300R</h1>
+                        <p class="paragraph-text w-75">Always remain up to date with the “Discount & offer” section of Motorcycle Valley. At this page we try to cover up most of the motorcycle </p>
+                      <div class="m-3">
+                        <button class="purchase-button">Purchase Now</button>
+                      </div>
+                    </div>
+                    <div class="col-lg-5 p-5 my-5">
+                      <img src="images/offer-3.png" class="d-block w-100" alt="headphone">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            </section>
+
+        <!-- subscribe section  -->
+        <section class="container d-flex justify-content-center align-items-center" id="subscribe">
+        <div class="p-5">
+            <h1 class="text-center p-2">Subscribe to the <span class="orange-color">Honda</span> newsletter</h1>
+            <p class="subscribe-p-text"><em>By entering your email address you will always be up to date with the latest Ducati news and promotions. At any time you can complete your registration and create your profile on Honda section to receive personalised communications and access all features.</em> </p>
+            <p class="subscribe-p-text"><input type="checkbox" name="" id=""> <em> At any time you can complete your registration and create your profile on Honda section to receive personalised communications and access all features.I declare that I have read the <u>privacy policy</u> drafted pursuant to art. 13 of EU Regulation 2025/679 on the protection of personal data ("Regulation") and I authorise the processing of my email address for the purposes specified therein. </em> </p>
+            <input class="form-control" type="text" placeholder="Your Email">
+            <button class="purchase-button my-3">Subcribe Now</button>
+        </div>
+    </section>
     </main>
+
+    <!-- footer start -->
+    <footer class="container-fluid footer-bg text-center py-5">
+            <p>&copy; 2020 bike all right reserved</p>
+    </footer>
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
 </body>
 </html>
